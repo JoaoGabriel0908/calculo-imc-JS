@@ -32,5 +32,11 @@
 .input #peso{
     display: flex;
     flex-direction: column;
-    background-color: orange;
+   
+}
+#parabens{
+    color: green;
+}
+#cuidado{
+    color: red;
 }

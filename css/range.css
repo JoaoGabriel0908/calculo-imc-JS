@@ -1,0 +1,48 @@
+.range{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+}
+.range label{
+    text-align: center;
+    font-size: 1.7rem;
+}
+.range span{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.range span::after{
+    content: attr(data-unidade);
+    padding-left: 8px;
+}
+.range input[type='range']{
+    appearance: none;
+    background-color: transparent;
+}
+
+/* Fazendo a estilização do range no GOOGLE */
+.range input[type='range']::-webkit-slider-runnable-track{
+    height: 5px;
+    background-color: var(--light-color);
+    cursor: pointer;
+}
+/* Estilizando a bolinha do range */
+.range input[type='range']::-webkit-slider-thumb{
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translateY(-6.5px);
+}
+/* Firefox */
+.range input[type='range']::-moz-range-track{
+    height: 5px;
+    background-color: var(--light-color);
+}
+.range input[type='range']::-moz-range-track{
+    background-color: var(--primary-color);
+    border: none;
+}
